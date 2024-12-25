@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp lite </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>All Chats</h3>
+    
+    <!-- New Message button -->
+    <form action="/chats/newMessage">
+        <button>Write mesage</button>
+    </form>
+    
+    <br>
+    <br>
+
+    <!-- Display all chats -->
+        <% for(let chat of chats) { %>
+            <div>
+                <div class="inner_div">
+                    <p>From: <i><%= chat.from %></i> </p>
+                    <p>To: <i><%= chat.to %> </i></p>
+                    <p>Message: <br><%= chat.msg %> </p>
+                </div>
+            </div>
+        <% } %>
+
+</body>
+</html>

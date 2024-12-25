@@ -1,0 +1,15 @@
+div {
+    background-color: bisque;
+    border: 2px grey;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.inner_div {
+   padding: 10px; 
+}
+h1 {
+    color: red;
+}
+p {
+    margin: 5px;
+}
